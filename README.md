@@ -41,6 +41,9 @@ panda data.json
 - Get your single page portfolio as index.html.
 - Publish on github.
 
+### Demo
+[![asciicast](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq.svg)](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq)
+
 ### Example
 | Theme        | Picture           |
 | ------------- |:-------------:|
