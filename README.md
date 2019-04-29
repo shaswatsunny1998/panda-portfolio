@@ -1,10 +1,10 @@
 ![Sahayak Logo](https://raw.githubusercontent.com/YashMeh/portfolio-panda/master/logoPanda.png)
 [![npm](https://img.shields.io/badge/npm-6.8.0-brightgreen.svg)]()        ![node](https://img.shields.io/badge/node-11.8.0-brightgreen.svg)
-## portfolio-panda
+## panda-portfolio
 No more worries while making single page github portfolio websites.
 ### Installation
 ```javascript
-sudo npm install -g portfolio-panda
+sudo npm install -g panda-portfolio
 ```
 ### Running
 ```javascript
