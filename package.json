@@ -1,7 +1,7 @@
 {
   "name": "portfolio-panda",
   "version": "1.0.0",
-  "description": "A simple package for portfolio building.",
+  "description": "A npm package for building single page personal websites for github.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,6 @@
   "license": "ISC",
   "bin": {
     "panda": "./index.js"
-  }
+  },
+  "keywords":["npm","portfolio","personal-website","github-website"]
 }
