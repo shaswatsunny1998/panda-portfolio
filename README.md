@@ -1,5 +1,5 @@
 ![Sahayak Logo](https://raw.githubusercontent.com/YashMeh/portfolio-panda/master/logoPanda.png)
-[![npm](https://img.shields.io/badge/npm-6.8.0-brightgreen.svg)]()        ![node](https://img.shields.io/badge/node-11.8.0-brightgreen.svg)
+[![npm](https://img.shields.io/badge/npm-6.8.0-brightgreen.svg)](https://www.npmjs.com/package/panda-portfolio)        ![node](https://img.shields.io/badge/node-11.8.0-brightgreen.svg)
 ## panda-portfolio
 No more worries while making single page github portfolio websites.
 ### Installation
