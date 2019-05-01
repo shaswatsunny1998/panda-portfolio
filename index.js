@@ -1,37 +1,67 @@
 #!/usr/bin/env node
+
 var fs = require('fs');
 
-var contactInfo={
-    github:"<i class='fab fa-github fa-2x ss' href=",
-    linkedin:"<i class='fab fa-linkedin fa-2x ss' href=",
-    medium:"<i class='fab fa-medium fa-2x ss' href=",
-    facebook:"<i class='fab fa-facebook-f fa-2x ss' href=",
-    instagram:"<i class='fab fa-instagram fa-2x ss' href="
+var contactInfo = {
+    github: "<i class='fab fa-github fa-2x ss' href=",
+    linkedin: "<i class='fab fa-linkedin fa-2x ss' href=",
+    medium: "<i class='fab fa-medium fa-2x ss' href=",
+    facebook: "<i class='fab fa-facebook-f fa-2x ss' href=",
+    instagram: "<i class='fab fa-instagram fa-2x ss' href="
 }
-const fileName=`./${process.argv[2]}`;
-fs.readFile(fileName, 'utf8', function (err, data) {
-    if (err) throw err; 
-    var obj = JSON.parse(data);
-    var about="";
-    obj.about.forEach((ele)=>{
-        about+='<br><p>'+ele+'</p>';
+
+const args = process.argv[2];
+if (args == "init") {
+    let dir = process.cwd();
+    let template = '{' +
+        '\n\t"theme": "(dark or light)",' +
+        '\n\t"name": "YOUR-NAME",' +
+        '\n\t"profilePhoto": "PICTURE-LINK",' +
+        '\n\t"resumeLink": "RESUME-LINK",' +
+        '\n\t"about": [' +
+        '\n\t\t"Paragraph1",' +
+        '\n\t\t"Paragraph2",' +
+        '\n\t\t"Paragraph3",' +
+        '\n\t\t"So on.."' +
+        '\n\t],' +
+        '\n\t"links": {' +
+        '\n\t\t"github": "YOUR-GITHUB-PROFILE",' +
+        '\n\t\t"linkedin": "YOUR-LINKEDIN-PROFILE",' +
+        '\n\t\t"medium": "YOUR-MEDIUM-PROFILE",' +
+        '\n\t\t"facebook": "YOUR-FACEBOOK-PROFILE",' +
+        '\n\t\t"instagram": "YOUR-INSTAGRAM-PROFILE"' +
+        '\n\t}' +
+        '\n}'
+    fs.writeFile(dir + "/config.json", template, (err) => {
+        if (err) {
+            throw err;
+        } else {
+            console.log("Template config.json created\nRun `panda config.json` after editing");
+        }
     })
-    var css=
-    {
-        backColor:'whitesmoke',
-        fontColor:'black'
-    }
-    if(obj.theme=='dark')
-    {
-        css['backColor']='black';
-        css['fontColor']='whitesmoke';
-    }
-    var badges=Object.keys(obj.links);
-    var bottomLinks="";
-    badges.forEach((badge)=>{
-        bottomLinks+=contactInfo[badge]+obj.links[badge]+">"+'</i>';
-    })
-    var html=`<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+} else {
+    const fileName = `./${process.argv[2]}`;
+    fs.readFile(fileName, 'utf8', function (err, data) {
+        if (err) throw err;
+        var obj = JSON.parse(data);
+        var about = "";
+        obj.about.forEach((ele) => {
+            about += '<br><p>' + ele + '</p>';
+        })
+        var css = {
+            backColor: 'whitesmoke',
+            fontColor: 'black'
+        }
+        if (obj.theme == 'dark') {
+            css['backColor'] = 'black';
+            css['fontColor'] = 'whitesmoke';
+        }
+        var badges = Object.keys(obj.links);
+        var bottomLinks = "";
+        badges.forEach((badge) => {
+            bottomLinks += contactInfo[badge] + obj.links[badge] + ">" + '</i>';
+        })
+        var html = `<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
     'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
     
     <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
@@ -107,11 +137,19 @@ fs.readFile(fileName, 'utf8', function (err, data) {
     </body>
     
     </html>`
-    var fileName = 'index.html';
-    var stream = fs.createWriteStream(fileName);
+        var fileName = 'index.html';
+        var stream = fs.createWriteStream(fileName);
 
+<<<<<<< HEAD
 stream.once('open', function(fd) {
   stream.end(html);
 });
 console.log("File created successfully !")
 });
+=======
+        stream.once('open', function (fd) {
+            stream.end(html);
+        });
+    });
+}
+>>>>>>> 1857c15051b8f8d057e4d9815d17e9eda8712dd1
