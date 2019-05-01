@@ -1,6 +1,6 @@
 {
   "name": "panda-portfolio",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A npm package for building single page personal websites for github.",
   "main": "index.js",
   "scripts": {

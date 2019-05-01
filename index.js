@@ -140,16 +140,8 @@ if (args == "init") {
         var fileName = 'index.html';
         var stream = fs.createWriteStream(fileName);
 
-<<<<<<< HEAD
-stream.once('open', function(fd) {
-  stream.end(html);
-});
-console.log("File created successfully !")
-});
-=======
         stream.once('open', function (fd) {
             stream.end(html);
         });
     });
 }
->>>>>>> 1857c15051b8f8d057e4d9815d17e9eda8712dd1
