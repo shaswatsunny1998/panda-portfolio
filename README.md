@@ -19,8 +19,31 @@ panda config.json
 
 ## Alternate Method
 - Create a .json file within the directory
+- Paste the following content.
+
+```javascript
+{
+    "theme":"(dark or light)",  
+    "name":"YOUR-NAME",
+    "profilePhoto":"PICTURE-LINK",
+    "resumeLink":"RESUME-LINK",
+    "about":[
+        "Paragraph1",
+        "Paragraph2",
+        "Paragraph3",
+        "So on.."
+    ],
+    "links":{
+        "github":"YOUR-GITHUB-PROFILE",
+        "linkedin":"YOUR-LINKEDIN-PROFILE",
+        "medium":"YOUR-MEDIUM-PROFILE",
+        "facebook":"YOUR-FACEBOOK-PROFILE",
+        "instagram":"YOUR-INSTAGRAM-PROFILE"
+    }
+}
+```
 - Write panda <filename>.json to get the index.html page.
- 
+
 ### Demo
 [![asciicast](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq.svg)](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq)
 
