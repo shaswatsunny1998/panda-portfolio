@@ -18,7 +18,7 @@ panda config.json
 - Publish on github.
 
 ## Alternate Method
-- Create a .json file within the directory
+- Create a FILENAME.json file within the directory
 - Paste the following content.
 
 ```javascript
@@ -42,7 +42,7 @@ panda config.json
     }
 }
 ```
-- Write panda <filename>.json to get the index.html page.
+- Write panda FILENAME.json to get the index.html page.
 
 ### Demo
 [![asciicast](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq.svg)](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq)
