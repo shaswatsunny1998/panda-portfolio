@@ -44,7 +44,7 @@ if (args == "init") {
 where <command> is one of:
     init\t\t\tInitialises the current working directory with json template
     <path to config json>\tCreates index.html from json template\n
-For more info: https://www.npmjs.com/package/panda-portfolio`)
+For more info: https://www.npmjs.com/package/panda-portfolio\n`)
 } else {
     const fileName = `./${process.argv[2]}`;
     fs.readFile(fileName, 'utf8', function (err, data) {
