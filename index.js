@@ -39,6 +39,12 @@ if (args == "init") {
             console.log("Template config.json created\nRun `panda config.json` after editing");
         }
     })
+} else if (args == "help") {
+    console.log(`Usage: panda <command>\n
+where <command> is one of:
+    init\t\t\tInitialises the current working directory with json template
+    <path to config json>\tCreates index.html from json template\n
+For more info: https://www.npmjs.com/package/panda-portfolio`)
 } else {
     const fileName = `./${process.argv[2]}`;
     fs.readFile(fileName, 'utf8', function (err, data) {
