@@ -28,6 +28,9 @@ module.exports = () => {
         message: 'Your name',
         validate(value){
           return valdiator(value,'Please enter your name')
+        },
+        result(value){
+          return value.toLowerCase();
         }
       },
       {
@@ -42,21 +45,29 @@ module.exports = () => {
       },
       {
         name: 'pictureDir',
-        message: 'Copy paste the profile photo directory link ',
-        validate(value){
-          return valdiator(value,'Please enter the directory of the image for your portfolio photo')
+        message: 'enter the profile photo name please keep it in this same directory',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
         }
       },
       {
         name: 'resumeLink',
-        message: 'Copy paste the resume directory link ',
-        validate(value){
-          return valdiator(value,'Please enter the directory of the resume file')
+        message: 'enter the resume file name please keep it in this same directory',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
         }
       },
       {
         name: 'githubLink',
-        message: 'enter Your github profile link',
+        message: 'enter Your github profile link or leave empty',
         result(value){
           if(value===undefined){
             return ''
@@ -67,7 +78,7 @@ module.exports = () => {
       },
       {
         name: 'linkedinLink',
-        message: 'enter Your Linkedin profile link ',
+        message: 'enter Your Linkedin profile link or leave empty',
         result(value){
           if(value===undefined){
             return ''
@@ -78,7 +89,7 @@ module.exports = () => {
       },
       {
         name: 'mediumLink',
-        message: 'enter Your medium profile link',
+        message: 'enter Your medium profile link or leave empty',
         result(value){
           if(value===undefined){
             return ''
@@ -89,7 +100,7 @@ module.exports = () => {
       },
       {
         name: 'facebookLink',
-        message: 'enter Your facebook profile link',
+        message: 'enter Your facebook profile link or leave empty',
         result(value){
           if(value===undefined){
             return ''
@@ -100,7 +111,7 @@ module.exports = () => {
       },
       {
         name: 'instagramLink',
-        message: 'enter Your instagram profile link',
+        message: 'enter Your instagram profile link or leave empty',
         result(value){
           if(value===undefined){
             return ''

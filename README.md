@@ -8,6 +8,7 @@ No more worries while making single page github portfolio websites.
 sudo npm install -g panda-portfolio
 ```
 ### Creating the config file
+please make sure that you have the profile photo as well as resume file in the same directory
 ```javascript
 panda init
 ```
@@ -46,7 +47,7 @@ panda config.json
 - Write panda FILENAME.json to get the index.html page.
 
 ### Demo
-[![asciicast](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq.svg)](https://asciinema.org/a/DqlkYR2ofzrpN5gesljAHjcjq)
+![scrrengif](images/panda.gif)
 
 ### Example
 | Theme        | Picture                       |
