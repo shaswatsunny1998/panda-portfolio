@@ -11,5 +11,13 @@
   "bin": {
     "panda": "./index.js"
   },
-  "keywords":["npm","portfolio","personal-website","github-website"]
+  "keywords": [
+    "npm",
+    "portfolio",
+    "personal-website",
+    "github-website"
+  ],
+  "dependencies": {
+    "enquirer": "^2.3.0"
+  }
 }
