@@ -1,6 +1,6 @@
 module.exports = () => {
-  return `module.exports=()=>{
-    const { Snippet } = require('enquirer');
+  return `module.exports=(enquirer)=>{
+    const { Snippet } = enquirer;
 
   /**
    * @description             this validate sthe value typed by the user
@@ -22,7 +22,6 @@ module.exports = () => {
   const prompt = new Snippet({
     name: 'config',
     message: 'Fill out the fields in config.json',
-    required: true,
     fields: [
       {
         name: 'name',
@@ -57,28 +56,58 @@ module.exports = () => {
       },
       {
         name: 'githubLink',
-        message: 'enter Your github profile username only',
-        initial:''
+        message: 'enter Your github profile link',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
+        }
       },
       {
         name: 'linkedinLink',
-        message: 'enter Your Linkedin profile username only',
-        initial:''
+        message: 'enter Your Linkedin profile link ',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
+        }
       },
       {
         name: 'mediumLink',
-        message: 'enter Your medium profile username only',
-        initial:''
+        message: 'enter Your medium profile link',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
+        }
       },
       {
         name: 'facebookLink',
-        message: 'enter Your facebook profile username only',
-        initial:''
+        message: 'enter Your facebook profile link',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
+        }
       },
       {
         name: 'instagramLink',
-        message: 'enter Your instagram profile username only',
-        initial:''
+        message: 'enter Your instagram profile link',
+        result(value){
+          if(value===undefined){
+            return ''
+          }else{
+            return value
+          }
+        }
       },
     `
 }
