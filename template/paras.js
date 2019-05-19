@@ -1,4 +1,4 @@
-module.exports=(number)=>{
+module.exports = (number) => {
   return `
     {
       name: 'paragraph${number}',

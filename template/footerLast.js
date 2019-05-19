@@ -1,16 +1,16 @@
-module.exports=()=>{
-  return  `],
+module.exports = () => {
+  return `],
   "links":{
-    `+'\\'+`\${githubLink},
-    `+'\\'+`\${linkedinLink},
-    `+'\\'+`\${mediumLink},
-    `+'\\'+`\${facebookLink},
-    `+'\\'+`\${instagramLink},
+    "github":"` + '\\' + `\${githubLink}",
+    "linkedin":"` + '\\' + `\${linkedinLink}",
+    "medium":"` + '\\' + `\${mediumLink}",
+    "facebook":"` + '\\' + `\${facebookLink}",
+    "instagram":"` + '\\' + `\${instagramLink}"
   }
 }\`
 });
-prompt.run()
-   .then(answer => console.log('Answer:', answer.result))
+return prompt.run()
+   .then(answer => answer.result)
    .catch(err=>console.log(err));
 }
 `

@@ -1,4 +1,4 @@
-module.exports = ()=>{
+module.exports = () => {
   return `module.exports=()=>{
     const { Snippet } = require('enquirer');
 
