@@ -1,15 +1,25 @@
 {
   "name": "panda-portfolio",
-  "version": "1.0.6",
+  "version": "2.0.1",
   "description": "A npm package for building single page personal websites for github.",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "preferGlobal": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
-  "author": "YashMeh",
-  "license": "ISC",
+  "author": "YashMeh , Ram Pandey , Bhumij Gupta",
+  "license": "MIT",
   "bin": {
     "panda": "./index.js"
   },
-  "keywords":["npm","portfolio","personal-website","github-website"]
+  "keywords": [
+    "npm",
+    "portfolio",
+    "personal-website",
+    "github-website"
+  ],
+  "dependencies": {
+    "enquirer": "^2.3.0"
+  }
 }
