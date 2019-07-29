@@ -52,5 +52,5 @@ panda config.json
 ### Example
 | Theme        | Picture                       |
 | -------------|:-------------:                |
-| light        |   ![light](images/light.png)  |
-| dark         | ![dark](images/dark.png)      |
+| light        |   ![light](https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/light.png)  |
+| dark         | ![dark](https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/dark.png)      |
