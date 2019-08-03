@@ -1,31 +1,40 @@
-![Panda-portfolio Logo](images/logoPanda.png)
+<p align="center"><img src="https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/logoPanda.png" alt="Panda-portfolio logo"></p>
+<h1 align="center">Panda Portfolio</h1>
+<p align="center">No more worries while making single page github portfolio websites.</p>
 
-[![npm](https://img.shields.io/badge/npm-6.8.0-brightgreen.svg)](https://www.npmjs.com/package/panda-portfolio) ![node](https://img.shields.io/badge/node-11.8.0-brightgreen.svg) ![npm](https://img.shields.io/npm/dw/panda-portfolio.svg) ![GitHub](https://img.shields.io/github/license/YashMeh/panda-portfolio.svg)
-## panda-portfolio
-No more worries while making single page github portfolio websites.
-### Installation
+<p align="center"><a href="https://www.npmjs.com/package/panda-portfolio"><img src="https://img.shields.io/badge/npm-6.8.0-brightgreen.svg" alt="npm"></a> <img src="https://img.shields.io/badge/node-11.8.0-brightgreen.svg" alt="node"> <img src="https://img.shields.io/npm/dw/panda-portfolio.svg" alt="downloads"> <img src="https://img.shields.io/github/license/YashMeh/panda-portfolio.svg" alt="LICENSE"></p>
+
+## Installation
+
 ```javascript
 sudo npm install -g panda-portfolio
 ```
-### Creating the config file
+
+## Creating the config file
+
 please make sure that you have the profile photo as well as resume file in the same directory
+
 ```javascript
 panda init
 ```
-### Creating the index page
+
+## Creating the index page
+
 ```javascript
 panda config.json
 ```
-- Get your single page portfolio as index.html.
-- Publish on github.
+
+-   Get your single page portfolio as index.html.
+-   Publish on github.
 
 ## Alternate Method
-- Create a FILENAME.json file within the directory
-- Paste the following content.
+
+-   Create a FILENAME.json file within the directory
+-   Paste the following content.
 
 ```javascript
 {
-    "theme":"(dark or light)",  
+    "theme":"(dark or light)",
     "name":"YOUR-NAME",
     "profilePhoto":"PICTURE-LINK",
     "resumeLink":"RESUME-LINK",
@@ -44,13 +53,16 @@ panda config.json
     }
 }
 ```
-- Write panda FILENAME.json to get the index.html page.
 
-### Demo
-![scrrengif](images/panda.gif)
+-   Write panda FILENAME.json to get the index.html page.
 
-### Example
-| Theme        | Picture                       |
-| -------------|:-------------:                |
-| light        |   ![light](images/light.png)  |
-| dark         | ![dark](images/dark.png)      |
+## Demo
+
+![screengif](https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/panda.gif)
+
+## Example
+
+| Theme |                                           Picture                                           |
+| ----- | :-----------------------------------------------------------------------------------------: |
+| light | ![light](https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/light.png) |
+| dark  |  ![dark](https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/dark.png)  |
