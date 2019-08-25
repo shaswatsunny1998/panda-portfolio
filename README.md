@@ -7,7 +7,11 @@
 ## Installation
 
 ```javascript
+// For npm<5.2.0
 sudo npm install -g panda-portfolio
+
+// For npm>=5.2.0
+npx panda-portfolio <command>
 ```
 
 ## Creating the config file
