@@ -28,13 +28,13 @@ panda init
 panda config.json
 ```
 
--   Get your single page portfolio as index.html.
--   Publish on github.
+- Get your single page portfolio as index.html.
+- Publish on github.
 
 ## Alternate Method
 
--   Create a FILENAME.json file within the directory
--   Paste the following content.
+- Create a FILENAME.json file within the directory
+- Paste the following content.
 
 ```javascript
 {
@@ -58,7 +58,7 @@ panda config.json
 }
 ```
 
--   Write panda FILENAME.json to get the index.html page.
+- Write panda FILENAME.json to get the index.html page.
 
 ## Demo
 
