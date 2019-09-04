@@ -20,6 +20,7 @@
     "github-website"
   ],
   "dependencies": {
+    "@octokit/rest": "^16.28.9",
     "enquirer": "^2.3.0"
   }
 }
