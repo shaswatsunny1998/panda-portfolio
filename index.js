@@ -38,14 +38,16 @@ const args = process.argv[2];
             let accessToken = await require('./lib/hostHelper').getAccessToken(credentials)
             let wasRemoteRepoCreated = await require('./lib/hostHelper').createRemoteRepo(accessToken,credentials)
             if(wasRemoteRepoCreated){
-              
+              await require('./lib/hostHelper').pushRepo(dir,credentials)
             }else{
+              await require('./lib/hostHelper').deleteRepo(credentials.username,accessToken)
               throw new Error("")
             }
 
           } catch (error) {
-            // console.log(error)
-            console.log("Something went wrong while creating and hosting your webpage please try again or try\nhosting the page manually")
+            console.log(error)
+            console.log("Something went wrong while creating and hosting your webpage please try again or try hosting the page manually")
+            
           }
           
         }
