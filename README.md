@@ -62,7 +62,7 @@ panda config.json
 
 ## Demo
 
-![screengif](https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/panda.gif)
+![screengif](images/pandatuts.gif)
 
 ## Example
 
