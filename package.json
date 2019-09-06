@@ -20,6 +20,8 @@
     "github-website"
   ],
   "dependencies": {
-    "enquirer": "^2.3.0"
+    "@octokit/rest": "^16.28.9",
+    "enquirer": "^2.3.0",
+    "simple-git": "^1.126.0"
   }
 }
