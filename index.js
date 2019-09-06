@@ -33,7 +33,21 @@ const args = process.argv[2];
         var isHtmlFileCreated = await require('./lib/createIndexhtmlFile')('config.json')
         let userWantToHost = await require('./lib/askToHost').hostOrNot()
         if(userWantToHost){
-          let remoteCredsDetails = await require('./lib/askForGithubCreds')
+          try {
+            let credentials = await require('./lib/askForGithubCreds')()
+            let accessToken = await require('./lib/hostHelper').getAccessToken(credentials)
+            let wasRemoteRepoCreated = await require('./lib/hostHelper').createRemoteRepo(accessToken,credentials)
+            if(wasRemoteRepoCreated){
+              
+            }else{
+              throw new Error("")
+            }
+
+          } catch (error) {
+            // console.log(error)
+            console.log("Something went wrong while creating and hosting your webpage please try again or try\nhosting the page manually")
+          }
+          
         }
   
         console.log('Html file generated please view it and if you would like any changes\nyou can change the content in config.json file')
