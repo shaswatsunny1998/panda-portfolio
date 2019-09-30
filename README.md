@@ -1,7 +1,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/YashMeh/panda-portfolio/master/images/logoPanda.png" alt="Panda-portfolio logo"></p>
 <h1 align="center">Panda Portfolio</h1>
 <p align="center">No more worries while making single page github portfolio websites.</p>
-
+Panda looks cute
 <p align="center"><a href="https://www.npmjs.com/package/panda-portfolio"><img src="https://img.shields.io/badge/npm-6.8.0-brightgreen.svg" alt="npm"></a> <img src="https://img.shields.io/badge/node-11.8.0-brightgreen.svg" alt="node"> <img src="https://img.shields.io/npm/dw/panda-portfolio.svg" alt="downloads"> <img src="https://img.shields.io/github/license/YashMeh/panda-portfolio.svg" alt="LICENSE"></p>
 
 ## Installation
